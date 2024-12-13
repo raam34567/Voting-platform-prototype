@@ -1,0 +1,106 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+    text-align: center;
+    margin: 0;
+    padding-bottom: 60px; /* Ensure space for footer */
+    background-attachment: fixed; /* Fix background for a parallax effect */
+}
+
+header {
+    background-color: red; /* Set the background color to red */
+    padding: 20px; /* Adjust padding for the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: white; /* Make the title text white for contrast */
+    margin: 0; /* Remove default margin from the h1 element */
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.voting-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+/* Box Styling */
+.box {
+    border: 2px solid #333;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.vote-button {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Highlight selected box */
+.selected {
+    border: 2px solid #00f;
+    background-color: #e0e0ff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+}
